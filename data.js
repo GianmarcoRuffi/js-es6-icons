@@ -124,6 +124,12 @@ let fields = "";
 document.getElementById("field").innerHTML = fields;
 
 Object.entries(iconArray).forEach((entry) => {
-  const [key, value] = entry;
-  console.log(key, value);
+  const [value] = entry;
+  document.getElementById("field").innerHTML += `
+  <div>
+
+  ${value}
+
+      </div>
+      `;
 });
