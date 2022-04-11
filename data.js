@@ -123,14 +123,34 @@ const iconArray = [
 const icons = document.getElementById("icons");
 const filter = document.getElementById("filter");
 
-iconArray.forEach((element, index) => {
-  document.getElementById("icons").innerHTML += ` <div class="icon-card my-3">
-  <i class="${element.family} ${element.prefix}${element.name} ${element.type}" style="color:${element.color}"> </i> </div>
-  `;
-});
+function renderIcons(selection) {
+  document.getElementById("icons").innerHTML = "";
+  iconArray.forEach((element, index) => {
+    if (selection == "all") {
+      document.getElementById(
+        "icons"
+      ).innerHTML += ` <div class="icon-card my-3">
+    <i class="${element.family} ${element.prefix}${element.name} ${element.type}" style="color:${element.color}"> </i> <br>
+    <h3>${element.name}</h3>  </div>
+    `;
+    }
+
+    if (element.type.includes(selection)) {
+      document.getElementById(
+        "icons"
+      ).innerHTML += ` <div class="icon-card my-3">
+    <i class="${element.family} ${element.prefix}${element.name} ${element.type}" style="color:${element.color}"> </i> <br>
+    <h3>${element.name}</h3>  </div>
+    `;
+    }
+  });
+
+  console.log(selection);
+}
+
+renderIcons("all");
 
 filter.addEventListener("change", function (event) {
-  // let value = filter.options[filter.selectedIndex].value;
-  let value = event.target;
-  console.log(value.value);
+  let value = event.target.value;
+  renderIcons(value);
 });

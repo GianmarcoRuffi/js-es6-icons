@@ -18,27 +18,27 @@
     <title>Icons</title>
   </head>
   <body>
-    <header class="d-flex justify-content-center">
-      <div class="row d-flex justify-content-left">
-        <div class="col-12">FontIcons</div>
-      </div>
+    <header class="d-flex justify-content-left">
+      <div class="row d-flex justify-content-left p-3 logo">FontIcons</div>
+    </header>
+    <div class="container filter-box">
       <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-12 justify-content-center">
+        <div class="col-12 justify-content-center align-items-center">
           <form action="/action_page.php">
             <label for="filter">Filtra per tipo: </label>
             <select name="filter" id="filter">
-              <option value="1">All</option>
-              <option value="2">animal</option>
-              <option value="3">vegetable</option>
-              <option value="4">user</option>
+              <option value="all">All</option>
+              <option value="animal">animal</option>
+              <option value="vegetable">vegetable</option>
+              <option value="user">user</option>
             </select>
           </form>
         </div>
       </div>
-    </header>
+    </div>
     <main>
       <div class="container">
-        <div class="row d-flex justify-content-between" id="icons"></div>
+        <div class="row d-flex justify-content-left" id="icons"></div>
       </div>
     </main>
 
