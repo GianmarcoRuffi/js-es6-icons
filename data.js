@@ -123,7 +123,7 @@ const iconArray = [
 const icons = document.getElementById("icons");
 
 iconArray.forEach((element, index) => {
-  document.getElementById(
-    "icons"
-  ).innerHTML += `<div>  ${element.name} ${element.prefix} ${element.prefix} ${element.type} ${element.family}  ${element.color} </div>`;
+  document.getElementById("icons").innerHTML += `<div>
+  <i class="${element.family} ${element.prefix}${element.name} ${element.type}" style="color:${element.color}"> </i>
+  </div>`;
 });

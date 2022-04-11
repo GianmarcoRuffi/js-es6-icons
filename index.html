@@ -18,8 +18,27 @@
     <title>Icons</title>
   </head>
   <body>
-    <header></header>
-    <main id="icons"></main>
+    <header class="d-flex justify-content-center">
+      <div class="row d-flex justify-content-left">
+        <div class="col-12">FontIcons</div>
+      </div>
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-12 justify-content-center">
+          <form action="/action_page.php">
+            <label for="difficulty">Filtra per tipo: </label>
+            <select name="filter" id="filter">
+              <option value="1">All</option>
+              <option value="2">animal</option>
+              <option value="3">vegetable</option>
+              <option value="4">user</option>
+            </select>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main id="icons">
+      <div class="row d-flex"><div class="col-3"></div></div>
+    </main>
 
     <script src="./data.js"></script>
   </body>
