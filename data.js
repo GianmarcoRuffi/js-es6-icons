@@ -120,11 +120,16 @@ const iconArray = [
   },
 ];
 
-let icon = "";
-iconArray.forEach(myFunction);
+let fields = "";
+document.getElementById("field").innerHTML = fields;
 
-document.getElementById("field").innerHTML = icon;
+iconArray.forEach ((element)){
 
-function myFunction(item, index) {
-  icon += index + ": " + item + "<br>";
+  document.getElementById("field").innerHTML += `
+  
+
+    ${iconArray[i].name} ${iconArray[i].prefix}
+   ${iconArray[i].type} ${iconArray[i].family} ${iconArray[i].color}
+  </div>
+`;
 }
