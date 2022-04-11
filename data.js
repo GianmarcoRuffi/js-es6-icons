@@ -123,12 +123,6 @@ const iconArray = [
 let fields = "";
 document.getElementById("field").innerHTML = fields;
 
-iconArray.forEach((element) => {
-  document.getElementById("field").innerHTML += `
-  
-
-    ${iconArray[i].name} ${iconArray[i].prefix}
-   ${iconArray[i].type} ${iconArray[i].family} ${iconArray[i].color}
-  </div>
-`;
+iconArray.forEach((number, index) => {
+  console.log("Index: " + index + " Value: " + number);
 });
