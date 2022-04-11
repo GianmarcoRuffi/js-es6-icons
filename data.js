@@ -123,7 +123,9 @@ const iconArray = [
 const icons = document.getElementById("icons");
 
 iconArray.forEach((element, index) => {
-  document.getElementById("icons").innerHTML += `<div>
-  <i class="${element.family} ${element.prefix}${element.name} ${element.type}" style="color:${element.color}"> </i>
-  </div>`;
+  document.getElementById("icons").innerHTML += ` <div class="icon-card my-3">
+  <i class="${element.family} ${element.prefix}${element.name} ${element.type}" style="color:${element.color}"> </i> </div>
+  `;
 });
+
+object.addEventListener("change", myScript);
