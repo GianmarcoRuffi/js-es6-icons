@@ -123,8 +123,7 @@ const iconArray = [
 let fields = "";
 document.getElementById("field").innerHTML = fields;
 
-iconArray.forEach ((element)){
-
+iconArray.forEach((element) => {
   document.getElementById("field").innerHTML += `
   
 
@@ -132,4 +131,4 @@ iconArray.forEach ((element)){
    ${iconArray[i].type} ${iconArray[i].family} ${iconArray[i].color}
   </div>
 `;
-}
+});
