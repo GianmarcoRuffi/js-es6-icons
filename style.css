@@ -1,0 +1,11 @@
+header {
+  height: 100px;
+  width: auto;
+  background-color: aqua;
+}
+
+main {
+  height: 900px;
+  width: auto;
+  background-color: gray;
+}
