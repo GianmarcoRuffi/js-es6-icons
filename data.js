@@ -121,6 +121,7 @@ const iconArray = [
 ];
 
 const icons = document.getElementById("icons");
+const filter = document.getElementById("filter");
 
 iconArray.forEach((element, index) => {
   document.getElementById("icons").innerHTML += ` <div class="icon-card my-3">
@@ -128,4 +129,8 @@ iconArray.forEach((element, index) => {
   `;
 });
 
-object.addEventListener("change", myScript);
+filter.addEventListener("change", function (event) {
+  // let value = filter.options[filter.selectedIndex].value;
+  let value = event.target;
+  console.log(value.value);
+});
