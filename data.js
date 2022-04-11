@@ -120,12 +120,11 @@ const iconArray = [
   },
 ];
 
-let fields = "";
-document.getElementById("field").innerHTML = fields;
+const icons = document.getElementById("icons").innerHTML;
 
 Object.entries(iconArray).forEach((entry) => {
   const [value] = entry;
-  document.getElementById("field").innerHTML += `
+  document.getElementById("icons").innerHTML += `
   <div>
 
   ${value}
