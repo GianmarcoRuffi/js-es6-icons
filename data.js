@@ -123,5 +123,5 @@ const iconArray = [
 const icons = document.getElementById("icons");
 
 Object.entries(iconArray).forEach((object) => {
-  icons += `<div>  ${object.name} ${object.prefix}${object.prefix} ${object.type} ${object.family}  ${object.color}"></div>`;
+  icons.innerHTML += `<div>  ${object.name} ${object.prefix}${object.prefix} ${object.type} ${object.family}  ${object.color}"></div>`;
 });
